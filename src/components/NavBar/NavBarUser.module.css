@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    "lg lg rs rs pf";
+}
+
+.container_logo{
+    grid-area: lg;
+    background-color: black;
+    color: aliceblue;
+}
+.container_result{
+    grid-area: rs;
+    background-color: black;
+    color: aliceblue;
+}
+.container_profile{
+    grid-area: pf;
+    background-color: black;
+    color: aliceblue;
+}
