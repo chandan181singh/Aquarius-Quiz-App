@@ -1,0 +1,65 @@
+.quizForm{
+    margin: 20px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 3px;
+}
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff; /* You can adjust the color as needed */
+    outline: none;
+    resize: auto;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 5px 0; /* Adjust the margin to add some spacing between lines */
+    color: #fff;
+  }
+
+  input{
+    background: transparent;
+    border: none;
+    width: 50%;
+    outline: none;
+    font-size: 1rem;
+    color:#fff;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  input:focus{
+    border-bottom: 3px solid #2e7d32;
+  }
+  textarea:focus {
+    border-bottom: 3px solid #2e7d32; /* Change the color for focus state if needed */
+  }
+
+  form button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #2962ff;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  form button:focus{
+    background-color: #291fff;
+  }
+
+  .done{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+  }
+  .done button{
+    background-color: #d50000;
+    color: #fff;
+    font-size: 1.1rem;
+    border-color: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
