@@ -1,0 +1,59 @@
+[
+    {
+      "name": "John Doe",
+      "registrationNo": "R123456",
+      "email": "john.doe@example.com",
+      "password": "password123",  
+      "semester": 3,
+      "branch": "Computer Science",
+      "studentId": "S987654"
+    },
+    {
+      "name": "Jane Smith",
+      "registrationNo": "R654321",
+      "email": "jane.smith@example.com",
+      "password": "securepass321",  
+      "semester": 2,
+      "branch": "Electrical Engineering",
+      "studentId": "S123456"
+    },
+    {
+      "name": "Bob Johnson",
+      "registrationNo": "R789012",
+      "email": "bob.johnson@example.com",
+      "password": "strongpassword",  
+      "semester": 4,
+      "branch": "Mechanical Engineering",
+      "studentId": "S567890"
+    },
+
+    {
+        "name": "Alice Johnson",
+        "registrationNo": "R111222",
+        "email": "alice.johnson@example.com",
+        "password": "securepass111",  
+        "semester": 1,
+        "branch": "Civil Engineering",
+        "studentId": "S112233"
+    },
+    {
+        "name": "Charlie Brown",
+        "registrationNo": "R444555",
+        "email": "charlie.brown@example.com",
+        "password": "brown123",  
+        "semester": 5,
+        "branch": "Chemical Engineering",
+        "studentId": "S445566"
+    },
+    {
+        "name": "Eva Rodriguez",
+        "registrationNo": "R777888",
+        "email": "eva.rodriguez@example.com",
+        "password": "eva123",  
+        "semester": 2,
+        "branch": "Information Technology",
+        "studentId": "S778899"
+    }
+    
+  ]
+  

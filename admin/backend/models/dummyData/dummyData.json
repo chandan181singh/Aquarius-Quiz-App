@@ -1,0 +1,104 @@
+[
+    {
+      "quizName": "Sample Quiz 1",
+      "quizNo": 1,
+      "questions": [
+        {
+          "description": "What is the capital of France?",
+          "options": ["Berlin", "Madrid", "Paris", "Rome"],
+          "correctAnswer": 2
+        },
+        {
+          "description": "Which planet is known as the Red Planet?",
+          "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+          "correctAnswer": 1
+        }
+      ],
+      "createdDate": "2023-01-01T08:00:00.000Z",
+      "dueDate": "2023-01-15T12:00:00.000Z",
+      "duration": 300, 
+      "iSAvailable": true
+    },
+    {
+      "quizName": "Sample Quiz 2",
+      "quizNo": 2,
+      "questions": [
+        {
+          "description": "Who wrote 'Romeo and Juliet'?",
+          "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Leo Tolstoy"],
+          "correctAnswer": 1
+        },
+        {
+          "description": "What is the largest mammal?",
+          "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+          "correctAnswer": 1
+        }
+      ],
+      "createdDate": "2023-02-01T10:30:00.000Z",
+      "dueDate": "2023-02-15T14:30:00.000Z",
+      "duration": 300, 
+      "iSAvailable": true
+    },
+    {
+        "quizName": "Geography Quiz",
+        "quizNo": 3,
+        "questions": [
+        {
+            "description": "What is the largest desert in the world?",
+            "options": ["Gobi", "Sahara", "Arctic", "Antarctica"],
+            "correctAnswer": 3
+        },
+        {
+            "description": "Which river is the longest?",
+            "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+            "correctAnswer": 1
+        }
+        ],
+        "createdDate": "2023-03-01T09:45:00.000Z",
+        "dueDate": "2023-03-15T13:45:00.000Z",
+        "duration": 300, 
+        "iSAvailable": true
+    },
+    {
+        "quizName": "Science Quiz",
+        "quizNo": 4,
+        "questions": [
+        {
+            "description": "What is the chemical symbol for gold?",
+            "options": ["Gd", "Au", "Ag", "Fe"],
+            "correctAnswer": 2
+        },
+        {
+            "description": "Which gas do plants absorb during photosynthesis?",
+            "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+            "correctAnswer": 1
+        }
+        ],
+        "createdDate": "2023-04-01T11:15:00.000Z",
+        "dueDate": "2023-04-15T15:15:00.000Z",
+        "duration": 300, 
+        "iSAvailable": true
+    },
+    {
+        "quizName": "History Quiz",
+        "quizNo": 5,
+        "questions": [
+        {
+            "description": "Who was the first President of the United States?",
+            "options": ["Thomas Jefferson", "John Adams", "George Washington", "James Madison"],
+            "correctAnswer": 2
+        },
+        {
+            "description": "In which year did World War I begin?",
+            "options": ["1914", "1917", "1920", "1939"],
+            "correctAnswer": 0
+        }
+        ],
+        "createdDate": "2023-05-01T13:00:00.000Z",
+        "dueDate": "2023-05-15T17:00:00.000Z",
+        "duration": 300, 
+        "iSAvailable": true
+    }
+    
+  ]
+  

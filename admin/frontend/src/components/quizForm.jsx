@@ -13,7 +13,7 @@ const QuizForm = () => {
   const [correctAnswer, setCorrectAnswer] = useState('');
   const [questionsList, setQuestionsList] = useState([]);
 
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleOptionChange = (index, value) => {
     const newOptions = [...options];
@@ -57,9 +57,10 @@ const QuizForm = () => {
           createdDate: new Date(),
           dueDate: dueDate,
         }  
-        await axios.post('/api/quizData', quiz)
+        await axios.post('/api/quizData', quiz, {timeout: 100})
           .then(()=>  console.log("data is sent to server"))
-          .then(()=> navigate('/'))
+          .catch((error)=>console.log("Error : "+error))
+          navigate('/')
         
       }catch(error){
         console.log(error);

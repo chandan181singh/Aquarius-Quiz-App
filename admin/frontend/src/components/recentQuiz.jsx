@@ -60,7 +60,8 @@ function RecentQuiz() {
         </thead>
         <tbody>
         {data.map((row, index) => (
-              <tr key={index}>
+          !row.iSAvailable &&
+             ( <tr key={index}>
                 <td data-label="quiz_no">{row.quizNo}</td>
                 <td data-label="topic">{row.quizName}</td>
                 {/* <td data-label="createDate">{new Date(row.createdDate).toLocaleString()}</td> */}
@@ -82,7 +83,7 @@ function RecentQuiz() {
                     )
                   }
                 </td>
-              </tr>
+              </tr>)
               
             ))}
         </tbody>

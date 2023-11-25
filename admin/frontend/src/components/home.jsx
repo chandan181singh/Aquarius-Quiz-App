@@ -6,23 +6,33 @@ import
 //  import { Outlet } from 'react-router-dom'
  import {Link} from 'react-router-dom';
  import RecentQuiz from './recentQuiz';
- import axios from 'axios';
+ import useQuizData from '../hooks/useQuizData';
+ import useStudentData from '../hooks/useStudentData';
 
  
 function Home() {
-    const [quizData, setQuizData] = useState([]);
-    const fetchQuizData = useCallback( async()=>{
-        try{
-            const response = await axios.get('/api/quiz');
-            setQuizData(response.data);
-        }catch(error){
-            console.log(error);
-        }
-    }, []);
+    const { studentData, studentDataloading, studentDataerror } = useStudentData();
+    const { quizData, quizDataloading, quizDataerror } = useQuizData();
+    const [availableQuiz, setAvailableQuiz] = useState(0);
 
-    useEffect(()=>{
-        fetchQuizData();
-    }, [fetchQuizData])
+    const countAvailableQuiz = useCallback(() => {
+        const availableQuizzes = quizData.filter(quiz => quiz.iSAvailable);
+        setAvailableQuiz(availableQuizzes.length);
+      }, [quizData]);
+    
+      useEffect(() => {
+        countAvailableQuiz();
+      }, [countAvailableQuiz]);
+
+      if (studentDataloading) {
+        return <div>studentDataloading...</div>;
+      }else if(quizDataloading) {
+        return <div>quizDataloading...</div>;
+      }else if(studentDataerror){
+        return <div>Error: {studentDataerror}</div>;
+      }else if(quizDataerror){
+        return <div>Error: {studentDataerror}</div>;
+      }
 
   return (
     <main className='main-container'>
@@ -47,7 +57,7 @@ function Home() {
                     <h3>STUDENTS</h3>
                     <BsPeopleFill className='card_icon'/>
                 </div>
-                <h1>33</h1>
+                <h1>{studentData.length}</h1>
                 </Link>
             </div>
             
@@ -59,7 +69,7 @@ function Home() {
                         <h3>Available Quiz</h3>
                         <BsFillCheckCircleFill className='card_icon'/>
                     </div>
-                    <h1>3</h1>
+                    <h1>{availableQuiz}</h1>
                 </Link>
             </div>
            

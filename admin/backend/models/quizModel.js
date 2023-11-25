@@ -53,6 +53,16 @@ const quizSchema = mongoose.Schema({
     dueDate:{
         type: Date,
         required: true
+    },
+    duration: {
+      type: Number,
+      required: true,
+      default: 5 //5min
+    },
+    iSAvailable:{
+      type: Boolean,
+      required: true,
+      default: true
     }
 });
 
